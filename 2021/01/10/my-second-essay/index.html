@@ -6,17 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>我的第二篇博客 | CYX&#39;s BLOG</title>
+  <title>有限域（伽罗华域）上的加法乘法运算 | CYX&#39;s BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="我的第二篇博客">
+  <meta name="description" content="1 有限域的运算1.1 有限域的加法有限域上定义加法⊕：对于两个多项式f(x)和g(x)：f(x)⊕g(x)&#x3D;(f(x)+g(x))(modp(x))(modp)，其中p(x)是有限域的不可约多项式，p为GF(p^m)中的p为素数。例1：在GF(23)中:x⊕(x2+x+1)&#x3D;(x2+2x+1)(mod(x3+x+1))(mod2)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="有限域（伽罗华域）上的加法乘法运算">
 <meta property="og:url" content="http://example.com/2021/01/10/my-second-essay/index.html">
 <meta property="og:site_name" content="CYX&#39;s BLOG">
+<meta property="og:description" content="1 有限域的运算1.1 有限域的加法有限域上定义加法⊕：对于两个多项式f(x)和g(x)：f(x)⊕g(x)&#x3D;(f(x)+g(x))(modp(x))(modp)，其中p(x)是有限域的不可约多项式，p为GF(p^m)中的p为素数。例1：在GF(23)中:x⊕(x2+x+1)&#x3D;(x2+2x+1)(mod(x3+x+1))(mod2)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nb">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/add_table.png">
+<meta property="og:image" content="http://example.com/img/multiple_table.png">
 <meta property="article:published_time" content="2021-01-10T13:25:59.000Z">
-<meta property="article:modified_time" content="2021-01-10T13:26:48.689Z">
-<meta property="article:tag" content="随笔尝试">
+<meta property="article:modified_time" content="2021-01-13T07:47:43.704Z">
+<meta property="article:tag" content="密码学笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/add_table.png">
   
     <link rel="alternative" href="/atom.xml" title="CYX&#39;s BLOG" type="application/atom+xml">
   
@@ -151,7 +156,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的第二篇博客
+      有限域（伽罗华域）上的加法乘法运算
     </h1>
   
 
@@ -164,7 +169,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="1-有限域的运算"><a href="#1-有限域的运算" class="headerlink" title="1 有限域的运算"></a>1 有限域的运算</h1><h2 id="1-1-有限域的加法"><a href="#1-1-有限域的加法" class="headerlink" title="1.1 有限域的加法"></a>1.1 有限域的加法</h2><p><font size=4>有限域上定义加法⊕：<br>对于两个多项式f(x)和g(x)：<br>f(x)⊕g(x)=(f(x)+g(x))(modp(x))(modp)，其中p(x)是有限域的不可约多项式，p为GF(p^m)中的p为素数。<br>例1：<br>在GF(2<sup>3</sup>)中:<br>x⊕(x<sup>2</sup>+x+1)=(x<sup>2</sup>+2x+1)(mod(x<sup>3</sup>+x+1))(mod2)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=(x<sup>2</sup>+2x+1)(mod2)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=x<sup>2</sup>+1</font></p>
+<h2 id="1-2-有限域的乘法"><a href="#1-2-有限域的乘法" class="headerlink" title="1.2 有限域的乘法"></a>1.2 有限域的乘法</h2><p><font size=4>有限域上定义乘法&#8855;：<br>对于两个多项式f(x)和g(x)：<br>f(x)&#8855;g(x)=(f(x)×g(x))(modp(x))(modp)，其中p(x)是有限域的不可约多项式，p为GF(p^m)中的p为素数。<br>例2：<br>在GF(2<sup>3</sup>)中:<br>x&#8855;(x<sup>2</sup>+x+1)=(x<sup>3</sup>+x<sup>2</sup>+x)(mod(x<sup>3</sup>+x+1))(mod2)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=(x<sup>2</sup>+1)(mod2)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=x<sup>2</sup>+1</font></p>
+<h1 id="2-有限域加法表和乘法表"><a href="#2-有限域加法表和乘法表" class="headerlink" title="2 有限域加法表和乘法表"></a>2 有限域加法表和乘法表</h1><p><font size=4>GF(2<sup>3</sup>)={0,&nbsp;1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6,&nbsp;7}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;={0,&nbsp;1,&nbsp;10,&nbsp;11,&nbsp;100,&nbsp;101,&nbsp;110,&nbsp;111}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;={0,&nbsp;1,&nbsp;x,&nbsp;x+1,&nbsp;x<sup>2</sup>,&nbsp;x<sup>2</sup>+1,&nbsp;x<sup>2</sup>+x,&nbsp;x<sup>2</sup>+x+1&nbsp;}</font></p>
+<h2 id="2-1-GF-23-加法表"><a href="#2-1-GF-23-加法表" class="headerlink" title="2.1 GF(23)加法表"></a>2.1 GF(2<sup>3</sup>)加法表</h2><p><img src="/img/add_table.png" alt="加法表"></p>
+<h2 id="2-2-GF-23-乘法表"><a href="#2-2-GF-23-乘法表" class="headerlink" title="2.2 GF(23)乘法表"></a>2.2 GF(2<sup>3</sup>)乘法表</h2><p><img src="/img/multiple_table.png" alt="加法表"></p>
+
       
 
       
@@ -177,7 +187,7 @@
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢大爷的打赏~<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
                     
@@ -198,7 +208,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">随笔尝试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">密码学笔记</a>
         		</li>
       		
 		</ul>
@@ -388,7 +398,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">随笔尝试</a>
+                <a href="javascript:void(0)" class="js-tag color1">密码学笔记</a>
               </li>
             
             <div class="clearfix"></div>
